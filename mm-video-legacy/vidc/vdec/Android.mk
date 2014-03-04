@@ -85,6 +85,7 @@ libmm-vdec-inc          += frameworks/native/include/binder
 LOCAL_MODULE                    := libOmxVdec
 LOCAL_MODULE_TAGS               := optional
 LOCAL_CFLAGS                    := $(libOmxVdec-def)
+LOCAL_CFLAGS                    += -fno-strict-aliasing
 LOCAL_C_INCLUDES                += $(libmm-vdec-inc)
 
 LOCAL_PRELINK_MODULE    := false
